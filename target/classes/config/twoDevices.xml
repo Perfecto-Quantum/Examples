@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Appium Demo Suite" verbose="0" parallel="tests">
+    <listeners>
+        <listener class-name="com.quantum.listerners.QuantumReportiumListener"/>
+    </listeners>
+
+    <test name="SMS Test" enabled="true">
+        <parameter name="perfecto.capabilities.deviceName" value= "04157DF43344482C"></parameter>
+        <parameter name="perfectodevii.capabilities.deviceName" value= "03157DF3A517B128"></parameter>
+        <parameter name="perfectodevii.capabilities.os" value= "Android"></parameter>
+
+         <!--parameter name="phoneA.env.resources" value="src/main/resources/android"/-->
+        <!--parameter name="phoneB.env.resources" value="src/main/resources/ios"/-->
+
+        <groups>
+            <run>
+                <include name="@twoDevicesSMS"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.quantum.tests.twoDevices"/>
+        </classes>
+    </test>
+</suite>

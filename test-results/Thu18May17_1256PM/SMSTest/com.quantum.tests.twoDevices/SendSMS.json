@@ -1,0 +1,163 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "setTimeout",
+      "args": [
+        "{type=implicit, ms=20000}"
+      ],
+      "result": "null",
+      "subLogs": [],
+      "duration": 65
+    },
+    {
+      "commandName": "switchToContext",
+      "args": [
+        "{name=NATIVE_APP}"
+      ],
+      "result": "null",
+      "subLogs": [],
+      "duration": 91
+    },
+    {
+      "commandName": "setTimeout",
+      "args": [
+        "{type=implicit, ms=0}"
+      ],
+      "result": "null",
+      "subLogs": [],
+      "duration": 106
+    },
+    {
+      "commandName": "setTimeout",
+      "args": [
+        "{type=implicit, ms=20000}"
+      ],
+      "result": "null",
+      "subLogs": [],
+      "duration": 78
+    },
+    {
+      "commandName": "switchToContext",
+      "args": [
+        "{name=NATIVE_APP}"
+      ],
+      "result": "null",
+      "subLogs": [],
+      "duration": 70
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=//*[@resource-id=\"com.android.mms:id/floating_action_button\"], using=xpath}"
+      ],
+      "result": "id: 0",
+      "subLogs": [],
+      "duration": 626
+    },
+    {
+      "commandName": "clickElement",
+      "args": [
+        "By.xpath: //*[@resource-id=\"com.android.mms:id/floating_action_button\"]",
+        "{\"id\":\"0\"}"
+      ],
+      "result": "clickElement:null",
+      "subLogs": [],
+      "duration": 532
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=//*[@resource-id=\"com.android.mms:id/recipients_editor_to\"], using=xpath}"
+      ],
+      "result": "id: 1",
+      "subLogs": [],
+      "duration": 955
+    },
+    {
+      "commandName": "sendKeysToElement",
+      "args": [
+        "By.xpath: //*[@resource-id=\"com.android.mms:id/recipients_editor_to\"]",
+        "{\"id\":\"1\",\"value\":[\"13392344376\"]}"
+      ],
+      "result": "sendKeysToElement:null",
+      "subLogs": [],
+      "duration": 1651
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=//*[@resource-id=\"com.android.mms:id/editor_body\"], using=xpath}"
+      ],
+      "result": "id: 2",
+      "subLogs": [],
+      "duration": 806
+    },
+    {
+      "commandName": "sendKeysToElement",
+      "args": [
+        "By.xpath: //*[@resource-id=\"com.android.mms:id/editor_body\"]",
+        "{\"id\":\"2\",\"value\":[\"Test Message\"]}"
+      ],
+      "result": "sendKeysToElement:null",
+      "subLogs": [],
+      "duration": 1854
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=//*[@resource-id=\"com.android.mms:id/editor_body\"], using=xpath}"
+      ],
+      "result": "id: 3",
+      "subLogs": [],
+      "duration": 685
+    },
+    {
+      "commandName": "sendKeysToElement",
+      "args": [
+        "By.xpath: //*[@resource-id=\"com.android.mms:id/editor_body\"]",
+        "{\"id\":\"3\",\"value\":[\"Test Message\"]}"
+      ],
+      "result": "sendKeysToElement:null",
+      "subLogs": [],
+      "duration": 1126
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=//*[@resource-id=\"com.android.mms:id/send_button\"], using=xpath}"
+      ],
+      "result": "id: 4",
+      "subLogs": [],
+      "duration": 661
+    },
+    {
+      "commandName": "clickElement",
+      "args": [
+        "By.xpath: //*[@resource-id=\"com.android.mms:id/send_button\"]",
+        "{\"id\":\"4\"}"
+      ],
+      "result": "clickElement:null",
+      "subLogs": [],
+      "duration": 353
+    },
+    {
+      "commandName": "switchToContext",
+      "args": [
+        "{name=NATIVE_APP}"
+      ],
+      "result": "null",
+      "subLogs": [],
+      "duration": 48
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=//*[@text=\"Test Message\"], using=xpath}"
+      ],
+      "result": "id: 0",
+      "subLogs": [],
+      "duration": 620
+    }
+  ],
+  "checkPoints": []
+}

@@ -1,0 +1,86 @@
+{
+  "total": 1,
+  "pass": 0,
+  "fail": 1,
+  "skip": 0,
+  "classes": [
+    "com.quantum.tests.twoDevices"
+  ],
+  "envInfo": {
+    "browser-desired-capabilities": {
+      "password": "Perfecto1",
+      "automationName": "Appium",
+      "takesScreenshot": true,
+      "browserName": "MobileOS",
+      "javascriptEnabled": true,
+      "user": "uzie@perfectomobile.com",
+      "cssSelectorsEnabled": true
+    },
+    "browser-actual-capabilities": {
+      "reportPdfUrl": "https://beta.reporting-01.perfectomobile.com/export/api/v1/test-executions/pdf?externalId[0]=uzie@perfectomobile.com_RemoteWebDriver_17-05-17_20_45_40_1322&timestamp=1495053940262",
+      "available": "false",
+      "description": "keep",
+      "language": "English",
+      "deviceName": "95ECD130589BCBAB30B1412A7981091E3922DC60",
+      "deviceId": "95ECD130589BCBAB30B1412A7981091E3922DC60",
+      "resolution": "1242x2208",
+      "platform": "ANY",
+      "wifiMacAddress": "a0:18:28:98:53:27",
+      "manufacturer": "Apple",
+      "mode": "CONNECTED",
+      "password": "",
+      "cradleId": "WF-CG10-1-4/VIRTUAL/01",
+      "osVersion": "10.1.1",
+      "automationName": "Appium",
+      "host": "beta.perfectomobile.com",
+      "singleTestReportUrl": "https://beta.reporting-01.perfectomobile.com?externalId[0]=uzie@perfectomobile.com_RemoteWebDriver_17-05-17_20_45_40_1322&timestamp=1495053940262",
+      "inUse": "true",
+      "takesScreenshot": "true",
+      "browserName": "MobileOS",
+      "javascriptEnabled": "true",
+      "model": "iPhone-6 Plus",
+      "firmware": "10.1.1",
+      "rotatable": "true",
+      "testGridReportUrl": "https://beta.reporting-01.perfectomobile.com?externalId[0]=uzie@perfectomobile.com_RemoteWebDriver_17-05-17_20_45_40_1322&timestamp=1495053940262",
+      "os": "iOS",
+      "entityType": "remote_web_driver",
+      "allocatedTo": "uzie@perfectomobile.com",
+      "offlineToken": "",
+      "serverConnector": "",
+      "executionId": "uzie@perfectomobile.com_RemoteWebDriver_17-05-17_20_45_40_1322",
+      "webdriver.remote.sessionid": "f4f0a02f-fcaa-41cf-8adc-e6ab7c8a12c8",
+      "locationContextEnabled": "true",
+      "scriptName": "RemoteWebDriver",
+      "location": "NA-US-BOS",
+      "linkType": "lab",
+      "reportKey": "uzie@perfectomobile.com_RemoteWebDriver_17-05-17_20_45_40_1322",
+      "windTunnelReportUrl": "https://beta.reporting-01.perfectomobile.com?externalId[0]=uzie@perfectomobile.com_RemoteWebDriver_17-05-17_20_45_40_1322&timestamp=1495053940262",
+      "user": "",
+      "operabilityRatingScore": "100",
+      "cssSelectorsEnabled": "true",
+      "status": "Connected"
+    },
+    "isfw-build-info": {
+      "qaf-Type": "core",
+      "qaf-Revision": "11",
+      "qaf-Version": "2.1",
+      "qaf-Build-Time": "17-Apr-2017 02:20:41"
+    },
+    "run-parameters": {
+      "baseurl": "",
+      "resources": "src/main/resources/common"
+    },
+    "execution-env-info": {
+      "java.arch": "64",
+      "java.vendor": "Oracle Corporation",
+      "java.version": "1.8.0_45",
+      "os.arch": "x86_64",
+      "host": "UziMac.fios-router.home",
+      "os.name": "Mac OS X",
+      "user.name": "uzie",
+      "os.version": "10.11.1"
+    }
+  },
+  "startTime": 1495053955842,
+  "endTime": 1495054012171
+}

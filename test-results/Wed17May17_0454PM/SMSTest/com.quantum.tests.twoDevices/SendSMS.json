@@ -1,0 +1,24 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "setTimeout",
+      "args": [
+        "{type=implicit, ms=20000}"
+      ],
+      "result": "null",
+      "subLogs": [],
+      "duration": 25
+    },
+    {
+      "commandName": "switchToContext",
+      "args": [
+        "{name=NATIVE_APP}"
+      ],
+      "result": "null",
+      "subLogs": [],
+      "duration": 26
+    }
+  ],
+  "checkPoints": [],
+  "errorTrace": "com.qmetry.qaf.automation.core.AutomationError: Timed out after 60 seconds: Unable to create driver instance in 7th attempt with retry timeout of 60 seconds. You can check/set value of 'driver.init.retry.timeout' appropriately to set retry timeout on driver initialization failure.\nInvalid credentials.\nCommand duration or timeout: 48 milliseconds\nBuild info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'\nSystem info: host: 'UziMac.fios-router.home', ip: '192.168.1.155', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.1', java.version: '1.8.0_45'\nDriver info: com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\n\tat com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.execute(QAFExtendedWebDriver.java:234)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)\n\tat com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.<init>(QAFExtendedWebDriver.java:93)\n\tat com.qmetry.qaf.automation.ui.UiDriverFactory$Browsers.getDriver(UiDriverFactory.java:448)\n\tat com.qmetry.qaf.automation.ui.UiDriverFactory$Browsers.access$4(UiDriverFactory.java:427)\n\tat com.qmetry.qaf.automation.ui.UiDriverFactory.getDriver(UiDriverFactory.java:226)\n\tat com.qmetry.qaf.automation.ui.UiDriverFactory.get(UiDriverFactory.java:94)\n\tat com.qmetry.qaf.automation.core.QAFTestBase$DriverInitExpectedCondition.apply(QAFTestBase.java:511)\n\tat com.qmetry.qaf.automation.core.QAFTestBase$DriverInitExpectedCondition.apply(QAFTestBase.java:1)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)\n\tat com.qmetry.qaf.automation.core.QAFTestBase.init(QAFTestBase.java:410)\n\tat com.qmetry.qaf.automation.core.QAFTestBase.getUiDriver(QAFTestBase.java:198)\n\tat com.qmetry.qaf.automation.ui.WebDriverTestBase.getDriver(WebDriverTestBase.java:47)\n\tat com.qmetry.qaf.automation.ui.WebDriverTestBase.getDriver(WebDriverTestBase.java:1)\n\tat com.qmetry.qaf.automation.ui.AbstractTestCase.getDriver(AbstractTestCase.java:78)\n\tat com.quantum.tests.twoDevices.openApp(twoDevices.java:59)\n\tat com.quantum.tests.twoDevices.SendSMS(twoDevices.java:30)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:497)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:645)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:781)\n\tat org.testng.TestRunner.run(TestRunner.java:635)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:387)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:39)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)\n\tat org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)\n"
+}

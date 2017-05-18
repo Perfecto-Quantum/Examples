@@ -1,0 +1,22 @@
+{
+  "methods": [
+    {
+      "index": 1,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "SendSMS",
+        "groups": [
+          "@twoDevicesSMS"
+        ],
+        "name": "SendSMS",
+        "sign": "twoDevices.SendSMS()[pri:0, instance:com.quantum.tests.twoDevices@341b80b2]"
+      },
+      "dependsOn": [],
+      "startTime": 1495054105795,
+      "duration": 76623,
+      "result": "skip",
+      "passPer": 0.0
+    }
+  ]
+}

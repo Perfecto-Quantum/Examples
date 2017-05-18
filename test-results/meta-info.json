@@ -1,0 +1,34 @@
+{
+  "reports": [
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Thu18May17_1256PM",
+      "startTime": 1495126567060
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Wed17May17_0454PM",
+      "startTime": 1495054465373
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Wed17May17_0452PM",
+      "startTime": 1495054322320
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Wed17May17_0448PM",
+      "startTime": 1495054105708
+    },
+    {
+      "name": "Default Suite",
+      "dir": "test-results/Wed17May17_0447PM",
+      "startTime": 1495054060579
+    },
+    {
+      "name": "Default Suite",
+      "dir": "test-results/Wed17May17_0445PM",
+      "startTime": 1495053938100
+    }
+  ]
+}

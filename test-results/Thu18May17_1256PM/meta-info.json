@@ -1,0 +1,13 @@
+{
+  "name": "Appium Demo Suite",
+  "status": "pass",
+  "tests": [
+    "SMSTest"
+  ],
+  "total": 1,
+  "pass": 1,
+  "fail": 0,
+  "skip": 0,
+  "startTime": 1495126567060,
+  "endTime": 1495126647811
+}

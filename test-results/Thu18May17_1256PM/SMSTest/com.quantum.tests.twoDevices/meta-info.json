@@ -1,0 +1,23 @@
+{
+  "methods": [
+    {
+      "index": 1,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "SendSMS",
+        "groups": [
+          "@twoDevicesSMS"
+        ],
+        "name": "SendSMS",
+        "Perfecto-report": "<a href=\"https://beta.reporting-01.perfectomobile.com?externalId[0]=uzie@perfectomobile.com_RemoteWebDriver_17-05-18_16_56_07_1613&timestamp=1495126567164\" target=\"_blank\">view</a>",
+        "sign": "twoDevices.SendSMS()[pri:0, instance:com.quantum.tests.twoDevices@341b80b2]"
+      },
+      "dependsOn": [],
+      "startTime": 1495126567152,
+      "duration": 45977,
+      "result": "pass",
+      "passPer": 0.0
+    }
+  ]
+}

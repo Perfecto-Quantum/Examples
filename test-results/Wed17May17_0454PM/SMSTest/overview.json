@@ -1,0 +1,90 @@
+{
+  "total": 1,
+  "pass": 0,
+  "fail": 0,
+  "skip": 1,
+  "classes": [
+    "com.quantum.tests.twoDevices"
+  ],
+  "envInfo": {
+    "browser-desired-capabilities": {
+      "takesScreenshot": true,
+      "javascriptEnabled": true,
+      "os": "Android",
+      "deviceName": "03157DF3A517B128",
+      "cssSelectorsEnabled": true
+    },
+    "browser-actual-capabilities": {
+      "reportPdfUrl": "https://beta.reporting-01.perfectomobile.com/export/api/v1/test-executions/pdf?externalId[0]=uzie@perfectomobile.com_RemoteWebDriver_17-05-17_20_54_26_1334&timestamp=1495054466852",
+      "available": "false",
+      "language": "English",
+      "operatorCode": "310004",
+      "deviceName": "04157DF43344482C",
+      "deviceId": "04157DF43344482C",
+      "operatorName": "Verizon",
+      "resolution": "1440x2560",
+      "platform": "ANY",
+      "wifiMacAddress": "90:b6:86:c0:54:31",
+      "manufacturer": "Samsung",
+      "mode": "CONNECTED",
+      "password": "",
+      "cradleId": "WF-CG22-42/VIRTUAL/01",
+      "osVersion": "6.0.1",
+      "automationName": "Appium",
+      "host": "beta.perfectomobile.com",
+      "singleTestReportUrl": "https://beta.reporting-01.perfectomobile.com?externalId[0]=uzie@perfectomobile.com_RemoteWebDriver_17-05-17_20_54_26_1334&timestamp=1495054466852",
+      "inUse": "true",
+      "takesScreenshot": "true",
+      "browserName": "MobileOS",
+      "javascriptEnabled": "true",
+      "model": "Galaxy S6",
+      "firmware": "zerofltevzw-user 6.0.1 MMB29K G920VVRU4CPC2 release-keys",
+      "rotatable": "true",
+      "testGridReportUrl": "https://beta.reporting-01.perfectomobile.com?externalId[0]=uzie@perfectomobile.com_RemoteWebDriver_17-05-17_20_54_26_1334&timestamp=1495054466852",
+      "os": "Android",
+      "entityType": "remote_web_driver",
+      "allocatedTo": "uzie@perfectomobile.com",
+      "offlineToken": "",
+      "serverConnector": "",
+      "executionId": "uzie@perfectomobile.com_RemoteWebDriver_17-05-17_20_54_26_1334",
+      "phoneNumber": "+13392235658",
+      "webdriver.remote.sessionid": "be0eb725-2a0a-48cf-9ccc-48d43e962b5a",
+      "locationContextEnabled": "true",
+      "scriptName": "RemoteWebDriver",
+      "location": "NA-US-BOS",
+      "linkType": "lab",
+      "reportKey": "uzie@perfectomobile.com_RemoteWebDriver_17-05-17_20_54_26_1334",
+      "operatorCountry": "United States of America",
+      "windTunnelReportUrl": "https://beta.reporting-01.perfectomobile.com?externalId[0]=uzie@perfectomobile.com_RemoteWebDriver_17-05-17_20_54_26_1334&timestamp=1495054466852",
+      "user": "",
+      "operabilityRatingScore": "100",
+      "cssSelectorsEnabled": "true",
+      "status": "Connected"
+    },
+    "isfw-build-info": {
+      "qaf-Type": "core",
+      "qaf-Revision": "11",
+      "qaf-Version": "2.1",
+      "qaf-Build-Time": "17-Apr-2017 02:20:41"
+    },
+    "run-parameters": {
+      "perfecto.capabilities.deviceName": "04157DF43344482C",
+      "resources": "src/main/resources/common",
+      "baseurl": "",
+      "perfectodevii.capabilities.deviceName": "03157DF3A517B128",
+      "perfectodevii.capabilities.os": "Android"
+    },
+    "execution-env-info": {
+      "java.arch": "64",
+      "java.vendor": "Oracle Corporation",
+      "java.version": "1.8.0_45",
+      "os.arch": "x86_64",
+      "host": "UziMac.fios-router.home",
+      "os.name": "Mac OS X",
+      "user.name": "uzie",
+      "os.version": "10.11.1"
+    }
+  },
+  "startTime": 1495054539961,
+  "endTime": 1495054557465
+}
