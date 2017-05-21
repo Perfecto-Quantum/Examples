@@ -2,6 +2,8 @@ package com.quantum.tests;
 
 import com.qmetry.qaf.automation.ui.WebDriverTestCase;
 import com.quantum.generic.moreActions;
+import com.quantum.utils.CloudUtils;
+import com.quantum.utils.ConfigurationUtils;
 import com.quantum.utils.DeviceUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -15,40 +17,40 @@ import java.util.concurrent.TimeUnit;
 public class twoDevices extends WebDriverTestCase {
 
 
+    /**
+     *  Send SMS from one device (perfecto) to second device (perfectodevii)
+     *
+     */
+
+
+
     @Test(description="SendSMS", groups={"@twoDevicesSMS"})
     public void SendSMS() {
 
-        final String PhoneBNum = "13392344376";
+
+        //String PhoneBNum = "13392344376";
         final String msg = "Test Message";
 
         moreActions.switchToDriver("perfecto");
         openApp();
 
-
-
         moreActions.switchToDriver("perfectodevii");
         openApp();
-
-
+        String PhoneBNum = moreActions.getDevicePhoneNumber();
 
         //device A (send SMS)
         moreActions.switchToDriver("perfecto");
 
-        getDriver().findElement(By.xpath("//*[@resource-id=\"com.android.mms:id/floating_action_button\"]")).click();
-        getDriver().findElement(By.xpath("//*[@resource-id=\"com.android.mms:id/recipients_editor_to\"]")).sendKeys(PhoneBNum);
-        getDriver().findElement(By.xpath("//*[@resource-id=\"com.android.mms:id/editor_body\"]")).sendKeys(msg);
-        getDriver().findElement(By.xpath("//*[@resource-id=\"com.android.mms:id/editor_body\"]")).sendKeys(msg);
-        getDriver().findElement(By.xpath("//*[@resource-id=\"com.android.mms:id/send_button\"]")).click();
+
+        getDriver().findElement("newMessage.buton").click();
+        getDriver().findElement("recipients.editor").sendKeys(PhoneBNum);
+        getDriver().findElement("editorbody.text").sendKeys(msg);
+        getDriver().findElement("send.button").click();
 
 
         //deviceB
         moreActions.switchToDriver("perfectodevii");
-
-         DeviceUtils.switchToContext("NATIVE_APP");
-        DeviceUtils.startApp("com.android.mms", "identifier");
-
-        getDriver().findElement(By.xpath("//*[@text=\""+msg+"\"]"));
-
+        DeviceUtils.assertVisualText(msg);
 
     }
 
@@ -56,16 +58,15 @@ public class twoDevices extends WebDriverTestCase {
     private void openApp()
     {
 
-        getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        DeviceUtils.switchToContext("NATIVE_APP");
+        String appPackage = (String)getDriver().getCapabilities().getCapability("appPackage");
         try {
-            DeviceUtils.closeApp("com.android.mms", "identifier");
+            DeviceUtils.closeApp(appPackage, "identifier");
 
         }catch (Exception e)
         {
             //nothing
         }
-        DeviceUtils.startApp("com.android.mms", "identifier");
+        DeviceUtils.startApp(appPackage, "identifier");
     }
 
 

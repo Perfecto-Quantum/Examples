@@ -2,6 +2,96 @@
   "reports": [
     {
       "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_0133PM",
+      "startTime": 1495362833869
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_0132PM",
+      "startTime": 1495362721738
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_0128PM",
+      "startTime": 1495362526278
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_0126PM",
+      "startTime": 1495362401954
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_0118PM",
+      "startTime": 1495361939596
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_0114PM",
+      "startTime": 1495361681225
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_0113PM",
+      "startTime": 1495361594177
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_0107PM",
+      "startTime": 1495361235619
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_1257PM",
+      "startTime": 1495360620638
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_1245PM",
+      "startTime": 1495359920732
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_1242PM",
+      "startTime": 1495359770720
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_1241PM",
+      "startTime": 1495359714319
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_1235PM",
+      "startTime": 1495359347540
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_1234PM",
+      "startTime": 1495359248438
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_1233PM",
+      "startTime": 1495359182451
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_1232PM",
+      "startTime": 1495359143890
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_1215PM",
+      "startTime": 1495358124931
+    },
+    {
+      "name": "Appium Demo Suite",
+      "dir": "test-results/Sun21May17_1213PM",
+      "startTime": 1495358024479
+    },
+    {
+      "name": "Appium Demo Suite",
       "dir": "test-results/Thu18May17_1256PM",
       "startTime": 1495126567060
     },

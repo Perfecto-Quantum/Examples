@@ -3,9 +3,13 @@ package com.quantum.generic;
 import com.qmetry.qaf.automation.core.TestBaseProvider;
 import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver;
+import com.qmetry.qaf.automation.core.ConfigurationManager;
+import com.quantum.utils.CloudUtils;
+import com.quantum.utils.DeviceUtils;
 import org.openqa.selenium.By;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by uzie on 2/27/17.
@@ -38,12 +42,10 @@ public class moreActions {
 
     public static void switchToDriver(String driverName) {
 
-        //if (!getCurrentDriver().equals(driverName+"RemoteDriver")) {
-
         TestBaseProvider.instance().get().setDriver(driverName + "RemoteDriver");
-       // String envResources = ConfigurationManager.getBundle().getString(driverName + ".env.resources");
-       // ConfigurationManager.getBundle().setProperty("env.resources",envResources);
-        //}
+        String envResources = ConfigurationManager.getBundle().getString(driverName + ".env.resources");
+        ConfigurationManager.getBundle().setProperty("env.resources",envResources);
+
 
     }
 
@@ -96,6 +98,15 @@ public class moreActions {
 
         return  getQAFDriver().executeScript("mobile:Audio:speech2text", new Object[]{params}).toString();
     }
+
+    public static String getDevicePhoneNumber(){
+
+        Map<String, Object> params1 = new HashMap<>();
+        params1.put("property", "phoneNumber");
+        return (String) getQAFDriver().executeScript("mobile:handset:info", params1);
+
+    }
+
 
 }
 

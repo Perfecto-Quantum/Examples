@@ -1,0 +1,4 @@
+newMessage.buton = xpath=//*[@resource-id="com.samsung.android.messaging:id/floating_action_button"]
+recipients.editor = xpath=//*[@resource-id="com.samsung.android.messaging:id/recipients_editor_to"]
+editorbody.text = xpath=//*[@resource-id="com.samsung.android.messaging:id/editor_body"]
+send.button = xpath=//*[@resource-id="com.samsung.android.messaging:id/send_button"]

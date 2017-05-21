@@ -1,0 +1,4 @@
+newMessage.buton = xpath=//*[@resource-id="com.android.mms:id/fab"]
+recipients.editor = xpath=//hierarchy/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.MultiAutoCompleteTextView[1]
+editorbody.text = xpath=//*[@text="Enter message"]
+send.button = xpath=//*[@resource-id="com.android.mms:id/send_button"]

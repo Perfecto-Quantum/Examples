@@ -4,14 +4,20 @@
         <listener class-name="com.quantum.listerners.QuantumReportiumListener"/>
     </listeners>
 
-    <test name="SMS Test" enabled="true">
-        <parameter name="perfecto.capabilities.deviceName" value= "04157DF43344482C"></parameter>
-        <parameter name="perfectodevii.capabilities.deviceName" value= "03157DF3A517B128"></parameter>
+    <test name="SMS Test Android to Android"  enabled="true">
+        <parameter name="perfecto.capabilities.deviceName" value= "1115FBD16FEF0303"></parameter>
+        <parameter name="perfecto.capabilities.os" value= "Android"></parameter>
+        <parameter name="perfecto.capabilities.manufacturer" value= "Samsung"></parameter>
+        <parameter name="perfecto.capabilities.model" value= "Galaxy*"></parameter>
+        <parameter name="perfecto.capabilities.appPackage" value= "com.samsung.android.messaging"></parameter>
+
+        <parameter name="perfectodevii.capabilities.deviceName" value= "LGUS99185B89D4C"></parameter>
         <parameter name="perfectodevii.capabilities.os" value= "Android"></parameter>
+        <parameter name="perfectodevii.capabilities.appPackage" value= "com.android.mms"></parameter>
 
-         <!--parameter name="phoneA.env.resources" value="src/main/resources/android"/-->
-        <!--parameter name="phoneB.env.resources" value="src/main/resources/ios"/-->
-
+        <parameter name="env.resources" value="src/main/resources/androidSamsung"/>
+        <parameter name="perfecto.env.resources" value="src/main/resources/androidSamsung"/>
+        <parameter name="perfectodevii.env.resources" value="src/main/resources/android"/>
         <groups>
             <run>
                 <include name="@twoDevicesSMS"/>
@@ -21,4 +27,5 @@
             <class name="com.quantum.tests.twoDevices"/>
         </classes>
     </test>
+
 </suite>
