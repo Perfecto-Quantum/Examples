@@ -20,4 +20,5 @@ To replace between the driver use the command:
             moreActions.switchToDriver("perfecto");
 
 
-\
+In order to run this example, change in application.properties the cloud, user amd password.
+In resources/config/twoDevices.xml select 2 android devices with SIM.
