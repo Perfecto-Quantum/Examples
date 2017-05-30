@@ -38,29 +38,30 @@ After this upload command, the latest apk/ipa will be located in Perfecto reposi
 Mobile device Wifi is not very stable ,reset the devices WiFi before the test reduce dramatically networks issue.
 In the ###com.quantum.tests.beforeTestUtils.resetWifi  you can find an example how to reset it on ios and Android
 
-#Execution
+# Execution
 This section defines the best practice for test executions.
+
 ## Tags management
 in order to execute part of your scripts you should tag the tests , we suggest the following tags system:
 
 priority - refer to the test priority and set of test it related to
 for example:
-## P0 - unit test / Dev tests
+* P0 - unit test / Dev tests
 Set of standalone tests developed by the developers, for  mobile app it can be espresso/XCTests.
 These tests are part of the app and need to be installed on the device (as an APK or IPA).
 
-## P1 - Smoke tests
+* P1 - Smoke tests
 Few end-2-End tests which contains the basic flows in yur app , for example install app, login , add item to cart , checkout
 it should be executed every hour and should not take more then 15 minuets.
 
-## P2 - Regression tests
+* P2 - Regression tests
 The majority of tests which verify your application functionality.
 It should be executed every night on the verity of devices and should includes different wind tunnel configuration
 
-In some cases you would like to execute tests based on ## feature or code area that been changed.
+* feature tag - In some cases you would like to execute tests based on ## feature or code area that been changed.
 For example: new "login" mechanism been implanted so in this case all the tests related to login should be executed
 
-We also recommend to add a unique test name , this id will help to execute and debug the test
+* unique tag - We also recommend to add a unique test name , this id will help to execute and debug the test
 but also will help to analyze results and compare with other executions and other devices results
 
 ## How to configure the tags
