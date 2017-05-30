@@ -20,7 +20,8 @@ To replace between the driver use the command:
             moreActions.switchToDriver("perfecto");
 
 
-#BeforeTestUtils
+# BeforeTestUtils
+
 This class contains functions to use before execution test
 ## 1. Uninstall install app before execution
 To reduce false negative and improve the script stability we recommend to install and un install the application before test/flow.
