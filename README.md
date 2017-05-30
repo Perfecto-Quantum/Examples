@@ -29,4 +29,7 @@ As part of the CI the app should be uploaded to the cloud after the build.
 For Example: if you are using a Jenkins you can upload the latest build (APK or IPA) using [Perfecto plugin](https://wiki.jenkins-ci.org/display/JENKINS/MobileCloud+for+Jenkins+Plugin)
 ![Jenkins Plugin](/img/uploadAppJenkins.png)
 
+After this upload command, the latest apk/ipa will be located in Perfecto repository and you can use the function :
+###com.quantum.tests.beforeTestUtils.reinstallApp
+
 ## 2. turn wifi off /on
