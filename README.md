@@ -1,7 +1,7 @@
 # Quantum Example
 This Folder contains different examples for using Quantum
 
-##Two Devices example:
+## Two Devices example:
 This example show how to open and control two devices in one script.
 In this example deviceA send a SMS to deviceB which read and validate it
 
