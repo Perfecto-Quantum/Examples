@@ -20,9 +20,9 @@ To replace between the driver use the command:
             moreActions.switchToDriver("perfecto");
 
 
-#beforeTestUtils
+#BeforeTestUtils
 This class contains functions to use before execution test
-##1. Uninstall install app before execution
+## 1. Uninstall install app before execution
 To reduce false negative and improve the script stability we recommend to install and un install the application before test/flow.
 
 As part of the CI the app should be uploaded to the cloud after the build.
@@ -30,8 +30,8 @@ For Example: if you are using a Jenkins you can upload the latest build (APK or 
 ![Jenkins Plugin](/img/uploadAppJenkins.png)
 
 After this upload command, the latest apk/ipa will be located in Perfecto repository and you can use the function :
-###com.quantum.tests.beforeTestUtils.reinstallApp
+### com.quantum.tests.beforeTestUtils.reinstallApp
 
-##2. Turn wifi off /on
+## 2. Turn wifi off /on
 Mobile device Wifi is not very stable ,reset the devices WiFi before the test reduce dramatically networks issue.
 In the ###com.quantum.tests.beforeTestUtils.resetWifi  you can find an example how to reset it on ios and Android
