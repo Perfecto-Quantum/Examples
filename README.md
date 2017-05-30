@@ -1,7 +1,7 @@
 # Quantum Example
 This Folder contains different examples for using Quantum
 
-Two Devices example:
+##Two Devices example:
 This example show how to open and control two devices in one script.
 In this example deviceA send a SMS to deviceB which read and validate it
 
@@ -20,5 +20,13 @@ To replace between the driver use the command:
             moreActions.switchToDriver("perfecto");
 
 
-In order to run this example, change in application.properties the cloud, user amd password.
-In resources/config/twoDevices.xml select 2 android devices with SIM.
+#beforeTestUtils
+This class contains functions to use before execution test
+##  1. Uninstall install app before execution
+To reduce false negative and improve the script stability we recommend to install and un install the application before test/flow.
+
+As part of the CI the app should be uploaded to the cloud after the build.
+For Example: if you are using a Jenkins you can upload the latest build (APK or IPA) using [Perfecto plugin](https://wiki.jenkins-ci.org/display/JENKINS/MobileCloud+for+Jenkins+Plugin)
+![Jenkins Plugin](/img/uploadAppJenkins.png)
+
+## 2. turn wifi off /on
