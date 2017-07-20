@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Quantum POM Demo Suite" verbose="0" parallel="tests">
+	<listeners>
+		<listener class-name="com.quantum.listerners.QuantumReportiumListener" />
+	</listeners>
+
+	<test name="IOS Test" parallel="methods" enabled="true">
+		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+		<groups>
+			<run>
+				<include name="reservation" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.quantum.java.tests.TravelTest" />
+		</classes>
+	</test>
+
+	<test name="Android Test" parallel="methods" enabled="true">
+		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+		<classes>
+			<class name="com.quantum.java.tests.TravelTest" />
+		</classes>
+	</test>
+</suite>

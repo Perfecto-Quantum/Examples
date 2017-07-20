@@ -18,7 +18,9 @@ To replace between the drivers use the command:
             moreActions.switchToDriver("perfectodevii");
             or
             moreActions.switchToDriver("perfecto");
-
+			
+## Java Page Object Model (POM) Example:
+This example shows how to create a java project that uses Page Object Model with Quantum.
 
 # BeforeTestUtils
 This section contains expiation and actions need to be taken before executing test/flow
