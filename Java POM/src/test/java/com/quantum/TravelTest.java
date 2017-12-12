@@ -40,7 +40,7 @@ public class TravelTest extends WebDriverTestCase {
 		getDriver().get("/");
 	}
 
-//	@Test(groups = {"regression","login"})
+	@Test(groups = {"regression","login"})
 	public void loginLogoutTest() {
 
 		logStepStart("Browse to home page");
@@ -60,7 +60,7 @@ public class TravelTest extends WebDriverTestCase {
 		loginPage = accountPage.logout();
 	}
 
-//	@Test(groups = {"account"})
+	@Test(groups = {"account"})
 	public void createAccountTest() {
 
 		logStepStart("Browse to home page");

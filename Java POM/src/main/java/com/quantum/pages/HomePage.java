@@ -15,6 +15,7 @@ public class HomePage extends AbstractBasePageCommon {
 
 	public HomePage() {
 		super();
+		clickHomeMenu();
 		validateHomePage();
 	}
 

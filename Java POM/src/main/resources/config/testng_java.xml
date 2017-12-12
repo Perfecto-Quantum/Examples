@@ -4,7 +4,7 @@
 		<listener class-name="com.quantum.listerners.QuantumReportiumListener" />
 	</listeners>
 
-	<test name="IOS Test" enabled="false">
+	<test name="IOS Test" enabled="true">
 		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
 		<classes>
 			<class name="com.quantum.TravelTest" />
@@ -13,8 +13,7 @@
 
 	<test name="Android Test" enabled="true">
 		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
- 		<parameter name="driver.capabilities.deviceName" value="04157DF43A656B1A"></parameter>
-		<classes>
+ 		<classes>
 			<class name="com.quantum.TravelTest" />
 		</classes>
 	</test>
