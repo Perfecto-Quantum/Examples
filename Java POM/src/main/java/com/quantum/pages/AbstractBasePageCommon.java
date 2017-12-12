@@ -1,14 +1,16 @@
 /**
  * 
  */
-package com.quantum.java.pages;
+package com.quantum.pages;
 
 import com.qmetry.qaf.automation.ui.WebDriverBaseTestPage;
 import com.qmetry.qaf.automation.ui.annotations.FindBy;
 import com.qmetry.qaf.automation.ui.api.PageLocator;
 import com.qmetry.qaf.automation.ui.api.WebDriverTestPage;
 import com.qmetry.qaf.automation.ui.webdriver.QAFWebElement;
-import com.quantum.listerners.QuantumReportiumListener;
+
+import static com.quantum.listerners.QuantumReportiumListener.logStepStart;
+
 
 /**
  * @author Lee Shoham
@@ -16,9 +18,6 @@ import com.quantum.listerners.QuantumReportiumListener;
  */
 public abstract class AbstractBasePageCommon extends WebDriverBaseTestPage<WebDriverTestPage> {
 
-	public AbstractBasePageCommon() {
-		super();
-	}
 
 	@FindBy(locator = "base.pageTitle")
 	private QAFWebElement title;
@@ -35,8 +34,15 @@ public abstract class AbstractBasePageCommon extends WebDriverBaseTestPage<WebDr
 	@FindBy(locator = "base.hotels")
 	private QAFWebElement hotels;
 	@FindBy(locator = "base.menuLogout")
-	private QAFWebElement logout;
+	private QAFWebElement logout;	
+	@FindBy(locator = "base.homeMenu")
+	private QAFWebElement homeMenu;
 
+	public AbstractBasePageCommon() {
+		super();
+	}
+
+	
 	@Override
 	protected void openPage(PageLocator locator, Object... args) {
 		// TODO Auto-generated method stub
@@ -49,6 +55,10 @@ public abstract class AbstractBasePageCommon extends WebDriverBaseTestPage<WebDr
 	
 	public void clickMenu() {
 		menuDropDown.click();
+	}
+	
+	public void clickHomeMenu() {
+		homeMenu.click();
 	}
 	
 	public HotelsPage clickHotels() {
@@ -94,7 +104,7 @@ public abstract class AbstractBasePageCommon extends WebDriverBaseTestPage<WebDr
 	}
 	
 	public LoginPage logout() {
-		QuantumReportiumListener.logStepStart("Logout");
+		logStepStart("Logout");
 		clickMenu();
 		clickAccountDropDown();
 		clickLogout();

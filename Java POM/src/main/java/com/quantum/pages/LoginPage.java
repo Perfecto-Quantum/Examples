@@ -1,13 +1,14 @@
 /**
  * 
  */
-package com.quantum.java.pages;
+package com.quantum.pages;
 
 import com.qmetry.qaf.automation.ui.annotations.FindBy;
 import com.qmetry.qaf.automation.ui.api.PageLocator;
 import com.qmetry.qaf.automation.ui.webdriver.QAFWebElement;
 
-import com.quantum.listerners.QuantumReportiumListener;
+import static com.quantum.listerners.QuantumReportiumListener.logStepStart;
+
 
 /**
  * @author Lee Shoham
@@ -15,10 +16,6 @@ import com.quantum.listerners.QuantumReportiumListener;
  */
 public class LoginPage extends AbstractBasePageCommon {
 
-	public LoginPage() {
-		super();
-		validateLoginPage();
-	}
 	
 	@FindBy(locator = "login.usernameInput")
 	private QAFWebElement usernameInput;
@@ -26,6 +23,11 @@ public class LoginPage extends AbstractBasePageCommon {
 	private QAFWebElement passwordInput;
 	@FindBy(locator = "login.loginBtn")
 	private QAFWebElement loginBtn;
+
+	public LoginPage() {
+		super();
+		validateLoginPage();
+	}
 
 	
 	/* (non-Javadoc)
@@ -37,14 +39,13 @@ public class LoginPage extends AbstractBasePageCommon {
 	}
 	
 	public void validateLoginPage() {
-		
-		QuantumReportiumListener.logStepStart("Validate Login Page");
 		getTitle().waitForAttribute("text", "Login", 10000);
 	}
 
 
 	public AccountPage doLogin(String username, String password) {
-		QuantumReportiumListener.logStepStart("Login");
+		
+		logStepStart("Login user " + username);
 		usernameInput.sendKeys(username);
 		passwordInput.sendKeys(password);
 		loginBtn.click();

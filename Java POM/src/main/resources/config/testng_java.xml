@@ -4,22 +4,18 @@
 		<listener class-name="com.quantum.listerners.QuantumReportiumListener" />
 	</listeners>
 
-	<test name="IOS Test" parallel="methods" enabled="true">
+	<test name="IOS Test" enabled="false">
 		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
-		<groups>
-			<run>
-				<include name="reservation" />
-			</run>
-		</groups>
 		<classes>
-			<class name="com.quantum.java.tests.TravelTest" />
+			<class name="com.quantum.TravelTest" />
 		</classes>
 	</test>
 
-	<test name="Android Test" parallel="methods" enabled="true">
+	<test name="Android Test" enabled="true">
 		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+ 		<parameter name="driver.capabilities.deviceName" value="04157DF43A656B1A"></parameter>
 		<classes>
-			<class name="com.quantum.java.tests.TravelTest" />
+			<class name="com.quantum.TravelTest" />
 		</classes>
 	</test>
 </suite>

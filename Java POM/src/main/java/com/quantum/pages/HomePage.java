@@ -1,10 +1,11 @@
 /**
  * 
  */
-package com.quantum.java.pages;
+package com.quantum.pages;
 
 import com.qmetry.qaf.automation.ui.api.PageLocator;
-import com.quantum.listerners.QuantumReportiumListener;
+
+import static com.quantum.listerners.QuantumReportiumListener.logStepStart;
 
 /**
  * @author Lee Shoham
@@ -25,20 +26,19 @@ public class HomePage extends AbstractBasePageCommon {
 
 
 	public void validateHomePage() {
-		QuantumReportiumListener.logStepStart("Validate Home Page");
 		getTitle().waitForAttribute("text", "PHPTRAVELS | Travel Technology Partner", 10000);
 	}
 
 
 	public LoginPage navToLoginPage() {
-		QuantumReportiumListener.logStepStart("Navigate to login page");
 		clickMenu();
 		clickMyAccount();
 		return clickLogin();
 	}
 
 	public CreateAccountPage navToCreateAccountPage() {
-		QuantumReportiumListener.logStepStart("Navigate to create account page");
+		
+		logStepStart("Navigate to create account");
 		clickMenu();
 		clickMyAccount();
 		return clickSignUp();
@@ -46,7 +46,9 @@ public class HomePage extends AbstractBasePageCommon {
 
 	
 	public HotelsPage navToHotelsPage() {
-		clickMenu();;
+		logStepStart("Navigate to hotels page");
+		
+		clickHomeMenu();
 		return clickHotels();
 	}
 }

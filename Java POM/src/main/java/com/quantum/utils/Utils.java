@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.quantum.java.pages;
+package com.quantum.utils;
 
 import com.qmetry.qaf.automation.ui.webdriver.QAFWebElement;
 import com.quantum.utils.DeviceUtils;

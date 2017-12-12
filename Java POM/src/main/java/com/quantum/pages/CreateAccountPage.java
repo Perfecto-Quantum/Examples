@@ -1,24 +1,19 @@
 /**
  * 
  */
-package com.quantum.java.pages;
+package com.quantum.pages;
 
 import com.qmetry.qaf.automation.ui.annotations.FindBy;
 import com.qmetry.qaf.automation.ui.api.PageLocator;
 import com.qmetry.qaf.automation.ui.webdriver.QAFWebElement;
 
-import com.quantum.listerners.QuantumReportiumListener;
+import static com.quantum.utils.ReportUtils.logStepStart;
 
 /**
  * @author Lee Shoham
  * @date Jul 9, 2017
  */
 public class CreateAccountPage extends AbstractBasePageCommon {
-
-	public CreateAccountPage() {
-		super();
-		validateCreateAccountPage();
-	}
 
 	@FindBy(locator = "createAccount.firstName")
 	private QAFWebElement firstName;
@@ -35,17 +30,24 @@ public class CreateAccountPage extends AbstractBasePageCommon {
 	@FindBy(locator = "createAccount.signUpBtn")
 	private QAFWebElement signUpBtn;
 
+
+	public CreateAccountPage() {
+		super();
+		validateCreateAccountPage();
+	}
+
+	
 	@Override
 	protected void openPage(PageLocator locator, Object... args) {
 	}
 
 	public void validateCreateAccountPage() {
-		QuantumReportiumListener.logStepStart("Validate Create Account Page");
 		getTitle().waitForAttribute("text", "Register", 10000);
 	}
 
 	public AccountPage createAccount(String first, String last, String mobile, String em, String pass, String confPass) {
-		QuantumReportiumListener.logStepStart("Create account");
+		
+		logStepStart("Create account");
 		firstName.sendKeys(first);
 		lastName.sendKeys(last);
 		mobileNumber.sendKeys(mobile);
