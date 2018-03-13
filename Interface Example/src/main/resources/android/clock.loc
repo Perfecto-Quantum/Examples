@@ -1,0 +1,7 @@
+clock.mainscreen.alarm.btn=xpath=//*[@content-desc="Alarm Tab 1 of 4"]
+clock.mainscreen.worldclock.btn=xpath=//*[lower-case(@content-desc)="world clock tab 2 of 4"]
+clock.worldclock.search.txt=xpath=//*[@resource-id="com.sec.android.app.clockpackage:id/wc_search_map_txt_find"]
+clock.worldclock.worldCityName.lbl=xpath=//*[@resource-id="com.sec.android.app.clockpackage:id/worldmap_cityname"]
+clock.worldclock.add.btn=xpath=//*[@resource-id="com.sec.android.app.clockpackage:id/clock_world_map_add"]
+clock.worldclock.cityName.lbl=xpath=//*[@resource-id="com.sec.android.app.clockpackage:id/item_cityname"]
+clock.worldclock.cityDelete.btn=xpath=//*[@resource-id="com.sec.android.app.clockpackage:id/wc_city_delete_icon"]

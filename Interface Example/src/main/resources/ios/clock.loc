@@ -1,0 +1,8 @@
+clock.mainscreen.alarm.btn=xpath=//*[@label="Alarm"]
+clock.mainscreen.worldclock.btn=xpath=//*[@label="World Clock"]
+clock.worldclock.addNew.btn=//*[@label="Add"]
+clock.worldclock.search.txt=xpath=//*[contains(name(), 'Search')]
+clock.worldclock.city.lbl=xpath=//*[@label='%s']
+clock.worldclock.city.obj=xpath=//*[contains(@label,'%s, ')]
+clock.worldclock.cityDelete.btn=xpath=//*[contains(name(),'Table')]//*[contains(name(),'Button') and @label='Delete']
+clock.mainscreen=xpath=//*[contains(name(),'Application')]
